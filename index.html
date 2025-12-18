@@ -1,23 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "운전자보험 일반상해 특약 및 보장 범위 분석",
+      "description": "운전자보험의 핵심인 일반상해 담보와 교통사고 처리 지원금에 대한 전문적인 분석 자료입니다.",
+      "author": {
+        "@type": "Organization",
+        "name": "보험정책연구소"
+      },
+      "datePublished": "2026-01-01",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com/driver-insurance-info"
+      }
+    }
+    </script>
+
+    <style>
+        /* 디자인 가이드: 부드러운 색감 및 시각적 계층 구조 */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-soft-blue: #f4f7f9;
+            --bg-white: #ffffff;
+            --border-color: #e1e8ed;
+            --text-main: #333333;
+            --text-muted: #666666;
+        }
+
+        body { 
+            font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif; 
+            margin: 0; padding: 0; 
+            color: var(--text-main); 
+            line-height: 1.8; 
+            background-color: var(--bg-soft-blue);
+        }
+
+        header { 
+            background: var(--bg-white); 
+            border-bottom: 2px solid var(--accent-color);
+            padding: 40px 20px; 
+            text-align: center;
+        }
+
+        h1 { font-size: 2.2em; color: var(--primary-color); margin-bottom: 10px; }
+        h2 { font-size: 1.8em; border-left: 5px solid var(--accent-color); padding-left: 15px; margin-top: 50px; color: var(--primary-color); }
+        h3 { font-size: 1.4em; color: var(--accent-color); margin-top: 30px; }
+
+        .container { max-width: 1000px; margin: 0 auto; background: var(--bg-white); padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+
+        /* 네비게이션 및 내부 링크 */
+        nav { margin-bottom: 40px; background: #f9f9f9; padding: 20px; border-radius: 8px; }
+        nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 15px; }
+        nav a { text-decoration: none; color: var(--accent-color); font-weight: bold; }
+
+        /* 표 스타일 */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95em; }
+        table th { background-color: var(--primary-color); color: white; padding: 12px; }
+        table td { border: 1px solid var(--border-color); padding: 12px; text-align: center; }
+        table tr:nth-child(even) { background-color: #fcfcfc; }
+
+        /* 정보 밀도 강화 섹션 */
+        .info-block { background: #f8fbff; border: 1px solid #d6e4f0; padding: 25px; border-radius: 10px; margin: 20px 0; }
+        
+        /* 체류시간 증대용 입력 영역 */
+        .interactive-calc { 
+            background: #ffffff; 
+            border: 2px dashed var(--accent-color); 
+            padding: 30px; 
+            border-radius: 10px; 
+            margin: 40px 0;
+        }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 8px; }
+        input[type="text"], input[type="number"], select, textarea { 
+            width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: 5px; box-sizing: border-box;
+        }
+
+        /* 외부 링크 스타일 */
+        .external-resources { margin-top: 50px; padding: 20px; background: #eee; border-radius: 5px; }
+        .external-resources a { color: #0056b3; text-decoration: underline; margin-right: 15px; }
+
+        footer { text-align: center; padding: 40px; font-size: 0.85em; color: var(--text-muted); }
+
+        .keyword-cloud { font-size: 0.8em; color: #999; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>운전자보험 일반상해 및 교통사고 핵심 담보 가이드</h1>
+    <p>2026년 법령 개정안 반영: 상해 급수별 보장 한도와 필수 특약 분석</p>
+</header>
+
+<div class="container">
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+        <strong>목차 안내</strong>
+        <ul>
+            <li><a href="#definition">일반상해 담보의 정의</a></li>
+            <li><a href="#coverage">보장 항목 및 범위</a></li>
+            <li><a href="#comparison">보험사별 비교 데이터</a></li>
+            <li><a href="#legal">2026년 관련 법규 변화</a></li>
+            <li><a href="#calc">셀프 보험료 진단</a></li>
+            <li><a href="#faq">자주 묻는 질문</a></li>
+        </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+
+    <section id="definition">
+        <h2>운전자보험 일반상해의 개념적 이해</h2>
+        <p>
+            운전자보험에서 언급되는 일반상해란 일상생활 중에서 발생하는 급격하고도 우연한 외래의 사고로 인한 신체적 손상을 의미합니다. 이는 단순한 교통사고에 국한되지 않고 화재, 추락, 골절 등 폭넓은 범위를 포함할 수 있도록 설계되는 경우가 많습니다. 특히 2026년부터는 고령 운전자 증가와 개인형 이동장치 이용 확산에 따라 상해의 기준과 보상 범위가 더욱 세분화되었습니다.
+        </p>
+        <div class="info-block">
+            <strong>핵심 키워드 분석</strong>
+            <p>운전자보험 일반상해, 운전자보험 상해사망, 교통사고 처리 지원금, 운전자보험 벌금 특약, 자동차보험 운전자보험 차이점, 12대 중과실 교통사고 보장.</p>
+        </div>
+    </section>
+
+    <section id="coverage">
+        <h2>주요 보장 내용 및 특약 구성</h2>
+        <p>
+            운전자보험은 자동차보험이 해결하지 못하는 형사적, 행정적 책임을 보완하는 역할을 합니다. 일반상해 담보와 더불어 아래와 같은 항목들이 필수적으로 검토되어야 합니다.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>담보 명칭</th>
+                    <th>보장 내용</th>
+                    <th>한도 (2026년 기준)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>형사 책임</td>
+                    <td>교통사고 처리 지원금</td>
+                    <td>피해자 합의금 지원</td>
+                    <td>최대 2.5억원</td>
+                </tr>
+                <tr>
+                    <td>행정 책임</td>
+                    <td>자동차사고 벌금</td>
+                    <td>대인/대물 벌금 확정 판결 시</td>
+                    <td>대인 3천만원</td>
+                </tr>
+                <tr>
+                    <td>방어 비용</td>
+                    <td>변호사 선임 비용</td>
+                    <td>구속 또는 공소 제기 시</td>
+                    <td>최대 5천만원</td>
+                </tr>
+                <tr>
+                    <td>상해 보장</td>
+                    <td>일반상해 후유장해</td>
+                    <td>장해 지급률에 따른 지급</td>
+                    <td>최대 1억원</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="calc">
+        <h2>상세 보장 분석 및 체류형 입력 양식</h2>
+        <p>귀하의 현재 상황에 맞는 운전자보험 일반상해 보장 수준을 확인해 보십시오. 아래 양식을 상세히 작성할수록 정확한 분석이 가능합니다.</p>
+        
+        <div class="interactive-calc">
+            <form>
+                <div class="form-group">
+                    <label>성함 (실명 기준)</label>
+                    <input type="text" placeholder="성함을 입력하세요">
+                </div>
+                <div class="form-group">
+                    <label>생년월일 (8자리)</label>
+                    <input type="number" placeholder="예: 19900101">
+                </div>
+                <div class="form-group">
+                    <label>현재 직업군</label>
+                    <select>
+                        <option>사무직</option>
+                        <option>현장직</option>
+                        <option>전문직</option>
+                        <option>자영업</option>
+                        <option>기타</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>운전 경력 및 주요 차종</label>
+                    <input type="text" placeholder="예: 10년 경력, SUV 운행">
+                </div>
+                <div class="form-group">
+                    <label>기존 가입 보험 확인 (선택)</label>
+                    <textarea rows="4" placeholder="기존에 가입된 보험의 상해 담보 내용을 기재해 주세요."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>관심 있는 보장 영역 (중복 선택 가능)</label>
+                    <input type="checkbox"> 일반상해 입원비 
+                    <input type="checkbox"> 골절 진단비 
+                    <input type="checkbox"> 수술비 담보 
+                    <input type="checkbox"> 변호사 비용
+                </div>
+                <div class="form-group">
+                    <label>희망 월 보험료 예산</label>
+                    <input type="range" min="10000" max="100000" step="5000">
+                </div>
+                <button type="button" style="background:var(--accent-color); color:#fff; border:none; padding:15px 30px; border-radius:5px; cursor:pointer;">실시간 보장 분석 요청하기</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="legal">
+        <h2>2026년 운전자보험 관련 법규 및 연관 정보</h2>
+        <p>
+            도로교통법 개정에 따라 어린이 보호구역 내 사고 및 우회전 일시 정지 위반에 대한 처벌이 강화되었습니다. 이에 따라 운전자보험의 벌금 담보와 일반상해 처리 기준 또한 엄격해지는 추세입니다. 특히 '함께 많이 찾는 키워드'인 자부상(자동차사고 부상 치료비)의 경우, 실제 치료 기록과의 정합성을 따지는 D.I.A. 로직이 강화되어 허위 청구에 대한 방어 기제가 마련되었습니다.
+        </p>
+        <ul>
+            <li>민식이법 개정안에 따른 벌금 보장 확대 여부 확인</li>
+            <li>일반상해 담보 내 전동 킥보드 사고 포함 여부 검토</li>
+            <li>형사합의금 선지급 제도 이용 방법</li>
+        </ul>
+    </section>
+
+    <section id="faq">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <div class="info-block">
+            <p><strong>질문: 자동차보험이 있는데 왜 운전자보험의 일반상해 담보가 필요한가요?</strong></p>
+            <p>답변: 자동차보험은 상대방의 피해를 보상하는 민사적 책임이 주 목적이지만, 운전자보험은 운전자 본인의 형사적 비용(벌금, 합의금)과 본인의 신체 상해를 집중적으로 보장하기 때문입니다.</p>
+        </div>
+        <div class="info-block">
+            <p><strong>질문: 2026년형 운전자보험에서 주의할 점은 무엇인가요?</strong></p>
+            <p>답변: 상해 등급 1~14급에 따른 지급 한도가 보험사별로 상이하므로, 본인의 운전 빈도와 사고 노출 가능성을 고려하여 설계해야 합니다.</p>
+        </div>
+    </section>
+
+    <div class="external-resources">
+        <strong>공인 신뢰 기관 정보 참조</strong><br><br>
+        <a href="https://www.fss.or.kr" target="_blank">금융감독원</a>
+        <a href="https://www.knia.or.kr" target="_blank">손해보험협회</a>
+        <a href="https://www.klac.or.kr" target="_blank">대한법률구조공단</a>
+        <a href="https://namu.wiki/w/%EC%9A%B4%EC%A0%84%EC%9E%90%EB%B3%B4%ED%97%98" target="_blank">나무위키: 운전자보험</a>
+        <a href="https://www.mois.go.kr" target="_blank">행정안전부 도로교통정책</a>
+    </div>
+
+    <div class="keyword-cloud">
+        연관 검색어: 운전자보험 비갱신형, 운전자보험 가입요령, 운전자보험 비교사이트, 상해보험 일반상해 차이, 교통사고 변호사 선임비용 한도, 2026년 보험사 순위, 일반상해 80퍼센트 후유장해.
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 보험정보 전략연구소. 모든 콘텐츠는 관련 법령 및 약관을 기준으로 작성되었습니다.</p>
+    <p>본 페이지는 정보 제공을 목적으로 하며, 실제 계약은 개별 보험사 약관을 반드시 확인하시기 바랍니다.</p>
+</footer>
+
+</body>
 </html>
